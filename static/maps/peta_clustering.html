@@ -1,0 +1,1217 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a8a599be05610c20b2a0420a1418a37c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_a8a599be05610c20b2a0420a1418a37c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a8a599be05610c20b2a0420a1418a37c = L.map(
+                "map_a8a599be05610c20b2a0420a1418a37c",
+                {
+                    center: [-6.91475, 107.60981],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ba430f9c19e6cfbc8424d15cea1dd1fb = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_ba430f9c19e6cfbc8424d15cea1dd1fb.addTo(map_a8a599be05610c20b2a0420a1418a37c);
+        
+    
+            var marker_cluster_2dd8c15273cce580cda5cd0115a3c2cd = L.markerClusterGroup(
+                {}
+            );
+        
+    
+            var marker_1c20af61da7c8aea0867c69e79148d75 = L.marker(
+                [-6.95982, 107.590044],
+                {}
+            ).addTo(marker_cluster_2dd8c15273cce580cda5cd0115a3c2cd);
+        
+    
+            var icon_865537577f2ac3c3044a2273a1ada1af = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1c20af61da7c8aea0867c69e79148d75.setIcon(icon_865537577f2ac3c3044a2273a1ada1af);
+        
+    
+        var popup_376096753c2d11c08d43ff7caa78449c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e11ea3a4f9f61b0b917f06d1e578fffd = $(`<div id="html_e11ea3a4f9f61b0b917f06d1e578fffd" style="width: 100.0%; height: 100.0%;">Desa/Kelurahan: CIBADUYUT KIDUL<br>Cluster: 2<br>Kategori: PENCURIAN<br>Jumlah: 1</div>`)[0];
+                popup_376096753c2d11c08d43ff7caa78449c.setContent(html_e11ea3a4f9f61b0b917f06d1e578fffd);
+            
+        
+
+        marker_1c20af61da7c8aea0867c69e79148d75.bindPopup(popup_376096753c2d11c08d43ff7caa78449c)
+        ;
+
+        
+    
+    
+            var marker_2c77b94af8c34e6908f9a3568e788bd2 = L.marker(
+                [-6.940841, 107.595295],
+                {}
+            ).addTo(marker_cluster_2dd8c15273cce580cda5cd0115a3c2cd);
+        
+    
+            var icon_8ea2ffe35cef03dabf15f34f8f4bb6e2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2c77b94af8c34e6908f9a3568e788bd2.setIcon(icon_8ea2ffe35cef03dabf15f34f8f4bb6e2);
+        
+    
+        var popup_a4749c1e7a441162c04e4bca129cbe79 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e630a391b33184b5fc61bcd00cd406a2 = $(`<div id="html_e630a391b33184b5fc61bcd00cd406a2" style="width: 100.0%; height: 100.0%;">Desa/Kelurahan: SITUSAEUR<br>Cluster: 1<br>Kategori: CURANMOR<br>Jumlah: 1</div>`)[0];
+                popup_a4749c1e7a441162c04e4bca129cbe79.setContent(html_e630a391b33184b5fc61bcd00cd406a2);
+            
+        
+
+        marker_2c77b94af8c34e6908f9a3568e788bd2.bindPopup(popup_a4749c1e7a441162c04e4bca129cbe79)
+        ;
+
+        
+    
+    
+            var marker_4b9d685b257d96c51c1f010ca39c5778 = L.marker(
+                [-6.962287, 107.693137],
+                {}
+            ).addTo(marker_cluster_2dd8c15273cce580cda5cd0115a3c2cd);
+        
+    
+            var icon_7316722400dac47d2f75b90a3e53fbae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4b9d685b257d96c51c1f010ca39c5778.setIcon(icon_7316722400dac47d2f75b90a3e53fbae);
+        
+    
+        var popup_fc385b9d952f8f49775e3d6aab040a68 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_980b24fa2830c681a74398be48565445 = $(`<div id="html_980b24fa2830c681a74398be48565445" style="width: 100.0%; height: 100.0%;">Desa/Kelurahan: RANCABOLANG<br>Cluster: 2<br>Kategori: PENCURIAN<br>Jumlah: 2</div>`)[0];
+                popup_fc385b9d952f8f49775e3d6aab040a68.setContent(html_980b24fa2830c681a74398be48565445);
+            
+        
+
+        marker_4b9d685b257d96c51c1f010ca39c5778.bindPopup(popup_fc385b9d952f8f49775e3d6aab040a68)
+        ;
+
+        
+    
+    
+            var marker_463d2698f72b455487e3416d99044fba = L.marker(
+                [-6.962287, 107.693137],
+                {}
+            ).addTo(marker_cluster_2dd8c15273cce580cda5cd0115a3c2cd);
+        
+    
+            var icon_79dc2c36517fd3f08d5528faec0fa33b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_463d2698f72b455487e3416d99044fba.setIcon(icon_79dc2c36517fd3f08d5528faec0fa33b);
+        
+    
+        var popup_bca6552bffaa1a862160ecb44f4438c4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b7938a59fc712ab1cab9dac598683242 = $(`<div id="html_b7938a59fc712ab1cab9dac598683242" style="width: 100.0%; height: 100.0%;">Desa/Kelurahan: RANCABOLANG<br>Cluster: 3<br>Kategori: PENGANIAYAAN<br>Jumlah: 2</div>`)[0];
+                popup_bca6552bffaa1a862160ecb44f4438c4.setContent(html_b7938a59fc712ab1cab9dac598683242);
+            
+        
+
+        marker_463d2698f72b455487e3416d99044fba.bindPopup(popup_bca6552bffaa1a862160ecb44f4438c4)
+        ;
+
+        
+    
+    
+            var marker_0d48ebe0603bac3bda1eb0d040b38617 = L.marker(
+                [-6.962287, 107.693137],
+                {}
+            ).addTo(marker_cluster_2dd8c15273cce580cda5cd0115a3c2cd);
+        
+    
+            var icon_c091666ec88d893b34abadf10ef93e49 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0d48ebe0603bac3bda1eb0d040b38617.setIcon(icon_c091666ec88d893b34abadf10ef93e49);
+        
+    
+        var popup_7b136e425fde60c977bd08778ad384f1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8986d5fd4c0c0161fecb9883e869530f = $(`<div id="html_8986d5fd4c0c0161fecb9883e869530f" style="width: 100.0%; height: 100.0%;">Desa/Kelurahan: RANCABOLANG<br>Cluster: 4<br>Kategori: BALAP LIAR<br>Jumlah: 1</div>`)[0];
+                popup_7b136e425fde60c977bd08778ad384f1.setContent(html_8986d5fd4c0c0161fecb9883e869530f);
+            
+        
+
+        marker_0d48ebe0603bac3bda1eb0d040b38617.bindPopup(popup_7b136e425fde60c977bd08778ad384f1)
+        ;
+
+        
+    
+    
+            var marker_14c5a081c8adb3cabaa3b493c4a86d93 = L.marker(
+                [-6.959808, 107.710153],
+                {}
+            ).addTo(marker_cluster_2dd8c15273cce580cda5cd0115a3c2cd);
+        
+    
+            var icon_c2fa17a46df046f589806f9512dd8187 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_14c5a081c8adb3cabaa3b493c4a86d93.setIcon(icon_c2fa17a46df046f589806f9512dd8187);
+        
+    
+        var popup_4804062cd296489b196dd8850f32c300 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_19951ca66dfce7c893d77134ca1f9de8 = $(`<div id="html_19951ca66dfce7c893d77134ca1f9de8" style="width: 100.0%; height: 100.0%;">Desa/Kelurahan: RANCANUMPANG<br>Cluster: 4<br>Kategori: BALAP LIAR<br>Jumlah: 1</div>`)[0];
+                popup_4804062cd296489b196dd8850f32c300.setContent(html_19951ca66dfce7c893d77134ca1f9de8);
+            
+        
+
+        marker_14c5a081c8adb3cabaa3b493c4a86d93.bindPopup(popup_4804062cd296489b196dd8850f32c300)
+        ;
+
+        
+    
+    
+            var marker_8441459f0c88ac8e1e247cfcd2de97e0 = L.marker(
+                [-6.945977, 107.703788],
+                {}
+            ).addTo(marker_cluster_2dd8c15273cce580cda5cd0115a3c2cd);
+        
+    
+            var icon_b1a121a6626796829ff586debbc7c77d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8441459f0c88ac8e1e247cfcd2de97e0.setIcon(icon_b1a121a6626796829ff586debbc7c77d);
+        
+    
+        var popup_a945e2c89c4d021d5089437cee3476cd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c4a5c8d8089d1b23d72174261940227c = $(`<div id="html_c4a5c8d8089d1b23d72174261940227c" style="width: 100.0%; height: 100.0%;">Desa/Kelurahan: CIMINCRANG<br>Cluster: 1<br>Kategori: BUANG SAMPAH SEMBARANGAN<br>Jumlah: 2</div>`)[0];
+                popup_a945e2c89c4d021d5089437cee3476cd.setContent(html_c4a5c8d8089d1b23d72174261940227c);
+            
+        
+
+        marker_8441459f0c88ac8e1e247cfcd2de97e0.bindPopup(popup_a945e2c89c4d021d5089437cee3476cd)
+        ;
+
+        
+    
+    
+            var marker_adda358c89beed09ae67184e886118e6 = L.marker(
+                [-6.903283, 107.710873],
+                {}
+            ).addTo(marker_cluster_2dd8c15273cce580cda5cd0115a3c2cd);
+        
+    
+            var icon_d353562fcbfb72c8546a85126cbd4df8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_adda358c89beed09ae67184e886118e6.setIcon(icon_d353562fcbfb72c8546a85126cbd4df8);
+        
+    
+        var popup_c5b18aa656e0200d762e4d0e2fb55ff3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_26a3e184e0ba44e2fd9fac72c56bb76f = $(`<div id="html_26a3e184e0ba44e2fd9fac72c56bb76f" style="width: 100.0%; height: 100.0%;">Desa/Kelurahan: PASIRJATI<br>Cluster: 2<br>Kategori: PENCURIAN<br>Jumlah: 4</div>`)[0];
+                popup_c5b18aa656e0200d762e4d0e2fb55ff3.setContent(html_26a3e184e0ba44e2fd9fac72c56bb76f);
+            
+        
+
+        marker_adda358c89beed09ae67184e886118e6.bindPopup(popup_c5b18aa656e0200d762e4d0e2fb55ff3)
+        ;
+
+        
+    
+    
+            var marker_b20d1b97980633dad8c79d0e469c7702 = L.marker(
+                [-6.903283, 107.710873],
+                {}
+            ).addTo(marker_cluster_2dd8c15273cce580cda5cd0115a3c2cd);
+        
+    
+            var icon_a82b2246218a53779ec32f68130d1a9e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b20d1b97980633dad8c79d0e469c7702.setIcon(icon_a82b2246218a53779ec32f68130d1a9e);
+        
+    
+        var popup_9f7cc46f4d89f009be28dccc9ceddfd3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6e7b20be7bae87b367d557d083f7e5cb = $(`<div id="html_6e7b20be7bae87b367d557d083f7e5cb" style="width: 100.0%; height: 100.0%;">Desa/Kelurahan: PASIRJATI<br>Cluster: 2<br>Kategori: PENCURIAN (1 KASUS)<br>Jumlah: 1</div>`)[0];
+                popup_9f7cc46f4d89f009be28dccc9ceddfd3.setContent(html_6e7b20be7bae87b367d557d083f7e5cb);
+            
+        
+
+        marker_b20d1b97980633dad8c79d0e469c7702.bindPopup(popup_9f7cc46f4d89f009be28dccc9ceddfd3)
+        ;
+
+        
+    
+    
+            var marker_b7fda69a7fe0a54d349dcba198dc36ed = L.marker(
+                [-6.903283, 107.710873],
+                {}
+            ).addTo(marker_cluster_2dd8c15273cce580cda5cd0115a3c2cd);
+        
+    
+            var icon_2482ccb67f01a143899e955aab891fd1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b7fda69a7fe0a54d349dcba198dc36ed.setIcon(icon_2482ccb67f01a143899e955aab891fd1);
+        
+    
+        var popup_7963d04dadf367f8c79ef0bbde4b8c40 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7572bcce1380985dc660883db6fd0597 = $(`<div id="html_7572bcce1380985dc660883db6fd0597" style="width: 100.0%; height: 100.0%;">Desa/Kelurahan: PASIRJATI<br>Cluster: 2<br>Kategori: PENCURIAN (3 KASUS)<br>Jumlah: 1</div>`)[0];
+                popup_7963d04dadf367f8c79ef0bbde4b8c40.setContent(html_7572bcce1380985dc660883db6fd0597);
+            
+        
+
+        marker_b7fda69a7fe0a54d349dcba198dc36ed.bindPopup(popup_7963d04dadf367f8c79ef0bbde4b8c40)
+        ;
+
+        
+    
+    
+            var marker_7ebe84adc28ad7c4622b2fa8d262dc55 = L.marker(
+                [-6.899459, 107.706553],
+                {}
+            ).addTo(marker_cluster_2dd8c15273cce580cda5cd0115a3c2cd);
+        
+    
+            var icon_32efbdf14f1012625f55950e9c801887 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7ebe84adc28ad7c4622b2fa8d262dc55.setIcon(icon_32efbdf14f1012625f55950e9c801887);
+        
+    
+        var popup_1117e0c3a7863fb929f4717575ef9cb7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b5ea0cb7b5389e06a81c71e32038b55d = $(`<div id="html_b5ea0cb7b5389e06a81c71e32038b55d" style="width: 100.0%; height: 100.0%;">Desa/Kelurahan: PASIR WANGI<br>Cluster: 0<br>Kategori: PENJAMBRETAN<br>Jumlah: 2</div>`)[0];
+                popup_1117e0c3a7863fb929f4717575ef9cb7.setContent(html_b5ea0cb7b5389e06a81c71e32038b55d);
+            
+        
+
+        marker_7ebe84adc28ad7c4622b2fa8d262dc55.bindPopup(popup_1117e0c3a7863fb929f4717575ef9cb7)
+        ;
+
+        
+    
+    
+            var marker_7ad3d8cf6b77ab5b1861da318e2df828 = L.marker(
+                [-6.899459, 107.706553],
+                {}
+            ).addTo(marker_cluster_2dd8c15273cce580cda5cd0115a3c2cd);
+        
+    
+            var icon_bee943bfd9ad5d0d1d0aaaad9ac34172 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7ad3d8cf6b77ab5b1861da318e2df828.setIcon(icon_bee943bfd9ad5d0d1d0aaaad9ac34172);
+        
+    
+        var popup_49320d0554977edafbe4fb3e42c1313c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_05d5e53478cf827297e0b360edd68580 = $(`<div id="html_05d5e53478cf827297e0b360edd68580" style="width: 100.0%; height: 100.0%;">Desa/Kelurahan: PASIR WANGI<br>Cluster: 0<br>Kategori: PERAMPASAN<br>Jumlah: 2</div>`)[0];
+                popup_49320d0554977edafbe4fb3e42c1313c.setContent(html_05d5e53478cf827297e0b360edd68580);
+            
+        
+
+        marker_7ad3d8cf6b77ab5b1861da318e2df828.bindPopup(popup_49320d0554977edafbe4fb3e42c1313c)
+        ;
+
+        
+    
+    
+            var marker_c5cdaeed178210fd7c1c01d32ce1b84b = L.marker(
+                [-6.899459, 107.706553],
+                {}
+            ).addTo(marker_cluster_2dd8c15273cce580cda5cd0115a3c2cd);
+        
+    
+            var icon_94d0c1f520b4b455792594b1079bd5de = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c5cdaeed178210fd7c1c01d32ce1b84b.setIcon(icon_94d0c1f520b4b455792594b1079bd5de);
+        
+    
+        var popup_5297ad804aecfae80ed0cf0f755e437f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4bfe186bb420998fb705e16ce1a86777 = $(`<div id="html_4bfe186bb420998fb705e16ce1a86777" style="width: 100.0%; height: 100.0%;">Desa/Kelurahan: PASIR WANGI<br>Cluster: 0<br>Kategori: PERKELAHIAN KELUARGA<br>Jumlah: 2</div>`)[0];
+                popup_5297ad804aecfae80ed0cf0f755e437f.setContent(html_4bfe186bb420998fb705e16ce1a86777);
+            
+        
+
+        marker_c5cdaeed178210fd7c1c01d32ce1b84b.bindPopup(popup_5297ad804aecfae80ed0cf0f755e437f)
+        ;
+
+        
+    
+    
+            var marker_a1be302027db7c5fa33457316c7496a9 = L.marker(
+                [-6.899459, 107.706553],
+                {}
+            ).addTo(marker_cluster_2dd8c15273cce580cda5cd0115a3c2cd);
+        
+    
+            var icon_4219ddf504fb5b062e15d26af1acb9b9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a1be302027db7c5fa33457316c7496a9.setIcon(icon_4219ddf504fb5b062e15d26af1acb9b9);
+        
+    
+        var popup_9c610b9c12d984833f9dc578cba6b378 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b80a57b018c1a74ff4533c394c353d71 = $(`<div id="html_b80a57b018c1a74ff4533c394c353d71" style="width: 100.0%; height: 100.0%;">Desa/Kelurahan: PASIR WANGI<br>Cluster: 3<br>Kategori: PENCURIAN KENDARAAN BERMOTOR<br>Jumlah: 2</div>`)[0];
+                popup_9c610b9c12d984833f9dc578cba6b378.setContent(html_b80a57b018c1a74ff4533c394c353d71);
+            
+        
+
+        marker_a1be302027db7c5fa33457316c7496a9.bindPopup(popup_9c610b9c12d984833f9dc578cba6b378)
+        ;
+
+        
+    
+    
+            var marker_0af81ffa2a67dc3d6129fe07379f3f67 = L.marker(
+                [-6.910681, 107.697679],
+                {}
+            ).addTo(marker_cluster_2dd8c15273cce580cda5cd0115a3c2cd);
+        
+    
+            var icon_5aba2757c66ecabd4104711afa28ef13 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0af81ffa2a67dc3d6129fe07379f3f67.setIcon(icon_5aba2757c66ecabd4104711afa28ef13);
+        
+    
+        var popup_3814ecefd493905812d481240544589b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4be74f7d9da756b653fbbf6a2f72d8d8 = $(`<div id="html_4be74f7d9da756b653fbbf6a2f72d8d8" style="width: 100.0%; height: 100.0%;">Desa/Kelurahan: CIGENDING<br>Cluster: 0<br>Kategori: PERKELAHIAN<br>Jumlah: 2</div>`)[0];
+                popup_3814ecefd493905812d481240544589b.setContent(html_4be74f7d9da756b653fbbf6a2f72d8d8);
+            
+        
+
+        marker_0af81ffa2a67dc3d6129fe07379f3f67.bindPopup(popup_3814ecefd493905812d481240544589b)
+        ;
+
+        
+    
+    
+            var marker_e0473d32502ba5a3aceeeddb82fb9dd8 = L.marker(
+                [-6.910681, 107.697679],
+                {}
+            ).addTo(marker_cluster_2dd8c15273cce580cda5cd0115a3c2cd);
+        
+    
+            var icon_2babe011eaa151949f2662b56cd24898 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e0473d32502ba5a3aceeeddb82fb9dd8.setIcon(icon_2babe011eaa151949f2662b56cd24898);
+        
+    
+        var popup_9d5072cebd9ac67f6b2ee927e2989400 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e7d045e5b397b747d370caa39aa8075a = $(`<div id="html_e7d045e5b397b747d370caa39aa8075a" style="width: 100.0%; height: 100.0%;">Desa/Kelurahan: CIGENDING<br>Cluster: 2<br>Kategori: PENCURIAN<br>Jumlah: 17</div>`)[0];
+                popup_9d5072cebd9ac67f6b2ee927e2989400.setContent(html_e7d045e5b397b747d370caa39aa8075a);
+            
+        
+
+        marker_e0473d32502ba5a3aceeeddb82fb9dd8.bindPopup(popup_9d5072cebd9ac67f6b2ee927e2989400)
+        ;
+
+        
+    
+    
+            var marker_46be5b27e71aec573edd5d1c8bbff2c7 = L.marker(
+                [-6.904808, 107.690215],
+                {}
+            ).addTo(marker_cluster_2dd8c15273cce580cda5cd0115a3c2cd);
+        
+    
+            var icon_c87e08ab0d3ff9ddfa3061a80e7bb063 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_46be5b27e71aec573edd5d1c8bbff2c7.setIcon(icon_c87e08ab0d3ff9ddfa3061a80e7bb063);
+        
+    
+        var popup_4c3c151258e8635e7e3bb135544e71f3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3c8c5671da4ff6c6394c52cd5de78b40 = $(`<div id="html_3c8c5671da4ff6c6394c52cd5de78b40" style="width: 100.0%; height: 100.0%;">Desa/Kelurahan: PASIR ENDAH<br>Cluster: 3<br>Kategori: PENCURIAN HP<br>Jumlah: 1</div>`)[0];
+                popup_4c3c151258e8635e7e3bb135544e71f3.setContent(html_3c8c5671da4ff6c6394c52cd5de78b40);
+            
+        
+
+        marker_46be5b27e71aec573edd5d1c8bbff2c7.bindPopup(popup_4c3c151258e8635e7e3bb135544e71f3)
+        ;
+
+        
+    
+    
+            var marker_daf2a5cfbb52ca50cb17e0102c4904f9 = L.marker(
+                [-6.904808, 107.690215],
+                {}
+            ).addTo(marker_cluster_2dd8c15273cce580cda5cd0115a3c2cd);
+        
+    
+            var icon_f4bb5fc220740fb5b1c0831bbbd54dd2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_daf2a5cfbb52ca50cb17e0102c4904f9.setIcon(icon_f4bb5fc220740fb5b1c0831bbbd54dd2);
+        
+    
+        var popup_c8426c30896857c1bbb2b1104d624e13 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7463b56eda11f3fb642045b1139d37f5 = $(`<div id="html_7463b56eda11f3fb642045b1139d37f5" style="width: 100.0%; height: 100.0%;">Desa/Kelurahan: PASIR ENDAH<br>Cluster: 3<br>Kategori: PENCURIAN RODA DUA<br>Jumlah: 4</div>`)[0];
+                popup_c8426c30896857c1bbb2b1104d624e13.setContent(html_7463b56eda11f3fb642045b1139d37f5);
+            
+        
+
+        marker_daf2a5cfbb52ca50cb17e0102c4904f9.bindPopup(popup_c8426c30896857c1bbb2b1104d624e13)
+        ;
+
+        
+    
+    
+            var marker_e713b214e5b3745e1001563fefa96c5b = L.marker(
+                [-6.904595, 107.690644],
+                {}
+            ).addTo(marker_cluster_2dd8c15273cce580cda5cd0115a3c2cd);
+        
+    
+            var icon_18da42cee0da9c748a3f0e6785342ad4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e713b214e5b3745e1001563fefa96c5b.setIcon(icon_18da42cee0da9c748a3f0e6785342ad4);
+        
+    
+        var popup_14e7083ab38b4cbbfa1cb9ae879cae02 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a5e2bf72fd0a1b1c27692c247fb030e5 = $(`<div id="html_a5e2bf72fd0a1b1c27692c247fb030e5" style="width: 100.0%; height: 100.0%;">Desa/Kelurahan: PASIR ENDAH<br>Cluster: 2<br>Kategori: PENCURIAN<br>Jumlah: 2</div>`)[0];
+                popup_14e7083ab38b4cbbfa1cb9ae879cae02.setContent(html_a5e2bf72fd0a1b1c27692c247fb030e5);
+            
+        
+
+        marker_e713b214e5b3745e1001563fefa96c5b.bindPopup(popup_14e7083ab38b4cbbfa1cb9ae879cae02)
+        ;
+
+        
+    
+    
+            var marker_9ce496b1b45f60e73beaf331a04e6554 = L.marker(
+                [-6.926003, 107.680488],
+                {}
+            ).addTo(marker_cluster_2dd8c15273cce580cda5cd0115a3c2cd);
+        
+    
+            var icon_7e3d1533d4886e7d551c14000ed0cced = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9ce496b1b45f60e73beaf331a04e6554.setIcon(icon_7e3d1533d4886e7d551c14000ed0cced);
+        
+    
+        var popup_12431a85af4a41ba1e37f67c71117e5f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_07235e52c9d6a1371596385a092fc0d9 = $(`<div id="html_07235e52c9d6a1371596385a092fc0d9" style="width: 100.0%; height: 100.0%;">Desa/Kelurahan: CISARANTEN KULON<br>Cluster: 4<br>Kategori: BEGAL<br>Jumlah: 3</div>`)[0];
+                popup_12431a85af4a41ba1e37f67c71117e5f.setContent(html_07235e52c9d6a1371596385a092fc0d9);
+            
+        
+
+        marker_9ce496b1b45f60e73beaf331a04e6554.bindPopup(popup_12431a85af4a41ba1e37f67c71117e5f)
+        ;
+
+        
+    
+    
+            var marker_92a7cf1e35c87fbc514fea2be07bfc5f = L.marker(
+                [-6.911626, 107.685382],
+                {}
+            ).addTo(marker_cluster_2dd8c15273cce580cda5cd0115a3c2cd);
+        
+    
+            var icon_23fa283a00be4e7657d9a2e30eefc590 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_92a7cf1e35c87fbc514fea2be07bfc5f.setIcon(icon_23fa283a00be4e7657d9a2e30eefc590);
+        
+    
+        var popup_eca96429440ed2094a5919061796491e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fcae48c802c458f847c9d2294f8f1b47 = $(`<div id="html_fcae48c802c458f847c9d2294f8f1b47" style="width: 100.0%; height: 100.0%;">Desa/Kelurahan: CISARANTEN BINA HARAPAN<br>Cluster: 4<br>Kategori: BEGAL<br>Jumlah: 2</div>`)[0];
+                popup_eca96429440ed2094a5919061796491e.setContent(html_fcae48c802c458f847c9d2294f8f1b47);
+            
+        
+
+        marker_92a7cf1e35c87fbc514fea2be07bfc5f.bindPopup(popup_eca96429440ed2094a5919061796491e)
+        ;
+
+        
+    
+    
+            var marker_e634f0e5ef6c2558ec0def4429dd715a = L.marker(
+                [-6.913657, 107.674513],
+                {}
+            ).addTo(marker_cluster_2dd8c15273cce580cda5cd0115a3c2cd);
+        
+    
+            var icon_a0a24313444ea6188485d76c2b142073 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e634f0e5ef6c2558ec0def4429dd715a.setIcon(icon_a0a24313444ea6188485d76c2b142073);
+        
+    
+        var popup_ec9a841e29ea93cdf72a87c10385fb9e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c79a3070c057a43005c6159bc29f72b9 = $(`<div id="html_c79a3070c057a43005c6159bc29f72b9" style="width: 100.0%; height: 100.0%;">Desa/Kelurahan: SUKAMISKIN<br>Cluster: 4<br>Kategori: BEGAL<br>Jumlah: 3</div>`)[0];
+                popup_ec9a841e29ea93cdf72a87c10385fb9e.setContent(html_c79a3070c057a43005c6159bc29f72b9);
+            
+        
+
+        marker_e634f0e5ef6c2558ec0def4429dd715a.bindPopup(popup_ec9a841e29ea93cdf72a87c10385fb9e)
+        ;
+
+        
+    
+    
+            var marker_3b4b04c2be4728f01ad2148b80eed2cf = L.marker(
+                [-6.931724, 107.672227],
+                {}
+            ).addTo(marker_cluster_2dd8c15273cce580cda5cd0115a3c2cd);
+        
+    
+            var icon_e68291e50619374e60d1c2dfa01a2636 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3b4b04c2be4728f01ad2148b80eed2cf.setIcon(icon_e68291e50619374e60d1c2dfa01a2636);
+        
+    
+        var popup_8c65d3f8d30d5fb21debab1b61011ac9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_38ef2bc8444bf049b638363232bdb693 = $(`<div id="html_38ef2bc8444bf049b638363232bdb693" style="width: 100.0%; height: 100.0%;">Desa/Kelurahan: CISARANTEN ENDAH<br>Cluster: 4<br>Kategori: BEGAL<br>Jumlah: 3</div>`)[0];
+                popup_8c65d3f8d30d5fb21debab1b61011ac9.setContent(html_38ef2bc8444bf049b638363232bdb693);
+            
+        
+
+        marker_3b4b04c2be4728f01ad2148b80eed2cf.bindPopup(popup_8c65d3f8d30d5fb21debab1b61011ac9)
+        ;
+
+        
+    
+    
+            var marker_a79093d236bb7d00399d7094c04ab597 = L.marker(
+                [-6.92322, 107.65993],
+                {}
+            ).addTo(marker_cluster_2dd8c15273cce580cda5cd0115a3c2cd);
+        
+    
+            var icon_0f4352fee9a6b0f4f4a8c60441a5f3c6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a79093d236bb7d00399d7094c04ab597.setIcon(icon_0f4352fee9a6b0f4f4a8c60441a5f3c6);
+        
+    
+        var popup_b0ce611cb609b13c9dccd8c98359d4f9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_98f5a73bae1d76d3f581b7b09302ead9 = $(`<div id="html_98f5a73bae1d76d3f581b7b09302ead9" style="width: 100.0%; height: 100.0%;">Desa/Kelurahan: ANTAPANI KIDUL<br>Cluster: 0<br>Kategori: PERKELAHIAN<br>Jumlah: 4</div>`)[0];
+                popup_b0ce611cb609b13c9dccd8c98359d4f9.setContent(html_98f5a73bae1d76d3f581b7b09302ead9);
+            
+        
+
+        marker_a79093d236bb7d00399d7094c04ab597.bindPopup(popup_b0ce611cb609b13c9dccd8c98359d4f9)
+        ;
+
+        
+    
+    
+            var marker_218699a8793bd0f6ef2bcb64a8cd5de8 = L.marker(
+                [-6.92322, 107.65993],
+                {}
+            ).addTo(marker_cluster_2dd8c15273cce580cda5cd0115a3c2cd);
+        
+    
+            var icon_954241fd72b48bf59adc16b554da189b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_218699a8793bd0f6ef2bcb64a8cd5de8.setIcon(icon_954241fd72b48bf59adc16b554da189b);
+        
+    
+        var popup_ced79fe0a9f6c42cbc196510065393c2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_58de012028a48a70e7b727fdb8c5c0c6 = $(`<div id="html_58de012028a48a70e7b727fdb8c5c0c6" style="width: 100.0%; height: 100.0%;">Desa/Kelurahan: ANTAPANI KIDUL<br>Cluster: 0<br>Kategori: PERKELAHIAN YANG MENIMBULKAN LUKA PARAH<br>Jumlah: 1</div>`)[0];
+                popup_ced79fe0a9f6c42cbc196510065393c2.setContent(html_58de012028a48a70e7b727fdb8c5c0c6);
+            
+        
+
+        marker_218699a8793bd0f6ef2bcb64a8cd5de8.bindPopup(popup_ced79fe0a9f6c42cbc196510065393c2)
+        ;
+
+        
+    
+    
+            var marker_2134b2ed2a7e166dbe4fdcb3115d50b0 = L.marker(
+                [-6.92322, 107.65993],
+                {}
+            ).addTo(marker_cluster_2dd8c15273cce580cda5cd0115a3c2cd);
+        
+    
+            var icon_272de3893a523375e7e2a128d9ab2805 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2134b2ed2a7e166dbe4fdcb3115d50b0.setIcon(icon_272de3893a523375e7e2a128d9ab2805);
+        
+    
+        var popup_d2e8f16eb0c9551aa367b32a8ab1d390 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0f64f915aba04faa9febe9ba6fa2d8e8 = $(`<div id="html_0f64f915aba04faa9febe9ba6fa2d8e8" style="width: 100.0%; height: 100.0%;">Desa/Kelurahan: ANTAPANI KIDUL<br>Cluster: 2<br>Kategori: PENCURIAN<br>Jumlah: 11</div>`)[0];
+                popup_d2e8f16eb0c9551aa367b32a8ab1d390.setContent(html_0f64f915aba04faa9febe9ba6fa2d8e8);
+            
+        
+
+        marker_2134b2ed2a7e166dbe4fdcb3115d50b0.bindPopup(popup_d2e8f16eb0c9551aa367b32a8ab1d390)
+        ;
+
+        
+    
+    
+            var marker_d28c9c3cddf53dc00d780d81d7004a72 = L.marker(
+                [-6.910528, 107.65627],
+                {}
+            ).addTo(marker_cluster_2dd8c15273cce580cda5cd0115a3c2cd);
+        
+    
+            var icon_20516a2d1fc2edef455ef728643f631b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d28c9c3cddf53dc00d780d81d7004a72.setIcon(icon_20516a2d1fc2edef455ef728643f631b);
+        
+    
+        var popup_fc9b8e004343be657c5bfba11ab7b682 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5356fc4539b5df0239b96571d25e0fe9 = $(`<div id="html_5356fc4539b5df0239b96571d25e0fe9" style="width: 100.0%; height: 100.0%;">Desa/Kelurahan: ANTAPANI KULON<br>Cluster: 0<br>Kategori: PENJAMBRETAN<br>Jumlah: 1</div>`)[0];
+                popup_fc9b8e004343be657c5bfba11ab7b682.setContent(html_5356fc4539b5df0239b96571d25e0fe9);
+            
+        
+
+        marker_d28c9c3cddf53dc00d780d81d7004a72.bindPopup(popup_fc9b8e004343be657c5bfba11ab7b682)
+        ;
+
+        
+    
+    
+            var marker_7e054cfed4d095e17802732577d18744 = L.marker(
+                [-6.910528, 107.65627],
+                {}
+            ).addTo(marker_cluster_2dd8c15273cce580cda5cd0115a3c2cd);
+        
+    
+            var icon_023a848a50109c8b59fbbf460fd12916 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7e054cfed4d095e17802732577d18744.setIcon(icon_023a848a50109c8b59fbbf460fd12916);
+        
+    
+        var popup_fd2b30b96d3f493f836decbf5d945fb0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_da9cb4c6c66c1213e320c9160c9dbb53 = $(`<div id="html_da9cb4c6c66c1213e320c9160c9dbb53" style="width: 100.0%; height: 100.0%;">Desa/Kelurahan: ANTAPANI KULON<br>Cluster: 2<br>Kategori: PENCURIAN<br>Jumlah: 2</div>`)[0];
+                popup_fd2b30b96d3f493f836decbf5d945fb0.setContent(html_da9cb4c6c66c1213e320c9160c9dbb53);
+            
+        
+
+        marker_7e054cfed4d095e17802732577d18744.bindPopup(popup_fd2b30b96d3f493f836decbf5d945fb0)
+        ;
+
+        
+    
+    
+            var marker_1cdf7a835f3a5f1f9b7c7ac325e3b44d = L.marker(
+                [-6.938881, 107.640897],
+                {}
+            ).addTo(marker_cluster_2dd8c15273cce580cda5cd0115a3c2cd);
+        
+    
+            var icon_6b01820e7e65756d61a327b0baa86f98 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1cdf7a835f3a5f1f9b7c7ac325e3b44d.setIcon(icon_6b01820e7e65756d61a327b0baa86f98);
+        
+    
+        var popup_0ae42739e2d0b1e8c52a1e54b2c42354 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1d51ad5dd1169d63f82ba77bdcac2048 = $(`<div id="html_1d51ad5dd1169d63f82ba77bdcac2048" style="width: 100.0%; height: 100.0%;">Desa/Kelurahan: BINONG<br>Cluster: 2<br>Kategori: PENCURIAN<br>Jumlah: 1</div>`)[0];
+                popup_0ae42739e2d0b1e8c52a1e54b2c42354.setContent(html_1d51ad5dd1169d63f82ba77bdcac2048);
+            
+        
+
+        marker_1cdf7a835f3a5f1f9b7c7ac325e3b44d.bindPopup(popup_0ae42739e2d0b1e8c52a1e54b2c42354)
+        ;
+
+        
+    
+    
+            var marker_468cd36f8bc7add9bee789c0d415f86d = L.marker(
+                [-6.875843, 107.57757],
+                {}
+            ).addTo(marker_cluster_2dd8c15273cce580cda5cd0115a3c2cd);
+        
+    
+            var icon_6eea22e7adb1397795fd054d126fcc18 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_468cd36f8bc7add9bee789c0d415f86d.setIcon(icon_6eea22e7adb1397795fd054d126fcc18);
+        
+    
+        var popup_0e05d1304c76a50b417a4ff1cdd85df4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_90d1b88c71067363e4cae3b2cb8f854c = $(`<div id="html_90d1b88c71067363e4cae3b2cb8f854c" style="width: 100.0%; height: 100.0%;">Desa/Kelurahan: SARIJADI<br>Cluster: 3<br>Kategori: PENCURIAN MOTOR<br>Jumlah: 3</div>`)[0];
+                popup_0e05d1304c76a50b417a4ff1cdd85df4.setContent(html_90d1b88c71067363e4cae3b2cb8f854c);
+            
+        
+
+        marker_468cd36f8bc7add9bee789c0d415f86d.bindPopup(popup_0e05d1304c76a50b417a4ff1cdd85df4)
+        ;
+
+        
+    
+    
+            var marker_ecde32f7f05154522083b43cc0c84afd = L.marker(
+                [-6.874161, 107.585678],
+                {}
+            ).addTo(marker_cluster_2dd8c15273cce580cda5cd0115a3c2cd);
+        
+    
+            var icon_165ef417adcb625ee21f27076d057410 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ecde32f7f05154522083b43cc0c84afd.setIcon(icon_165ef417adcb625ee21f27076d057410);
+        
+    
+        var popup_b1bedfcf691b447d223f82807905e844 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d17cd95e9424614b68b412db0086068b = $(`<div id="html_d17cd95e9424614b68b412db0086068b" style="width: 100.0%; height: 100.0%;">Desa/Kelurahan: SUKARASA<br>Cluster: 1<br>Kategori: KERIBUTAN WARGA<br>Jumlah: 4</div>`)[0];
+                popup_b1bedfcf691b447d223f82807905e844.setContent(html_d17cd95e9424614b68b412db0086068b);
+            
+        
+
+        marker_ecde32f7f05154522083b43cc0c84afd.bindPopup(popup_b1bedfcf691b447d223f82807905e844)
+        ;
+
+        
+    
+    
+            var marker_49e5d4373163b1f2b6d3b84f13b4711a = L.marker(
+                [-6.874161, 107.585678],
+                {}
+            ).addTo(marker_cluster_2dd8c15273cce580cda5cd0115a3c2cd);
+        
+    
+            var icon_60a3c7ab85080accf48028b52826c794 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_49e5d4373163b1f2b6d3b84f13b4711a.setIcon(icon_60a3c7ab85080accf48028b52826c794);
+        
+    
+        var popup_aebb2cf94e3e591e58192089a305e2ec = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_596a54033c158734ebc2f78bac42db02 = $(`<div id="html_596a54033c158734ebc2f78bac42db02" style="width: 100.0%; height: 100.0%;">Desa/Kelurahan: SUKARASA<br>Cluster: 2<br>Kategori: PENCURIAN<br>Jumlah: 2</div>`)[0];
+                popup_aebb2cf94e3e591e58192089a305e2ec.setContent(html_596a54033c158734ebc2f78bac42db02);
+            
+        
+
+        marker_49e5d4373163b1f2b6d3b84f13b4711a.bindPopup(popup_aebb2cf94e3e591e58192089a305e2ec)
+        ;
+
+        
+    
+    
+            var marker_342c074872add0687459ed6a26eb8f4c = L.marker(
+                [-6.874161, 107.585678],
+                {}
+            ).addTo(marker_cluster_2dd8c15273cce580cda5cd0115a3c2cd);
+        
+    
+            var icon_8c8800a17eb5363877b648ece9ae75af = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_342c074872add0687459ed6a26eb8f4c.setIcon(icon_8c8800a17eb5363877b648ece9ae75af);
+        
+    
+        var popup_e43e4ef15c5e6ff674bbda8057680594 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_55ecf01f35fee75f82f17c9343fd19b5 = $(`<div id="html_55ecf01f35fee75f82f17c9343fd19b5" style="width: 100.0%; height: 100.0%;">Desa/Kelurahan: SUKARASA<br>Cluster: 3<br>Kategori: PENCURIAN MOTOR<br>Jumlah: 4</div>`)[0];
+                popup_e43e4ef15c5e6ff674bbda8057680594.setContent(html_55ecf01f35fee75f82f17c9343fd19b5);
+            
+        
+
+        marker_342c074872add0687459ed6a26eb8f4c.bindPopup(popup_e43e4ef15c5e6ff674bbda8057680594)
+        ;
+
+        
+    
+    
+            var marker_02dec778f19487bfc336f6af972dd3e4 = L.marker(
+                [-6.874161, 107.585678],
+                {}
+            ).addTo(marker_cluster_2dd8c15273cce580cda5cd0115a3c2cd);
+        
+    
+            var icon_2ed5452518b2257b7f0ec17224822c8e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_02dec778f19487bfc336f6af972dd3e4.setIcon(icon_2ed5452518b2257b7f0ec17224822c8e);
+        
+    
+        var popup_87dd0aaa9af9474133d34d79df5a210b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f076c527257da1ddd727809ead8f1ebc = $(`<div id="html_f076c527257da1ddd727809ead8f1ebc" style="width: 100.0%; height: 100.0%;">Desa/Kelurahan: SUKARASA<br>Cluster: 4<br>Kategori: BEGAL - TAWURAN - GENG MOTOR<br>Jumlah: 2</div>`)[0];
+                popup_87dd0aaa9af9474133d34d79df5a210b.setContent(html_f076c527257da1ddd727809ead8f1ebc);
+            
+        
+
+        marker_02dec778f19487bfc336f6af972dd3e4.bindPopup(popup_87dd0aaa9af9474133d34d79df5a210b)
+        ;
+
+        
+    
+    
+            var marker_b82c02f9f3cda54a91a952d354b6871b = L.marker(
+                [-6.867158, 107.589088],
+                {}
+            ).addTo(marker_cluster_2dd8c15273cce580cda5cd0115a3c2cd);
+        
+    
+            var icon_444caeb8dd2984d497af925412f3d556 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b82c02f9f3cda54a91a952d354b6871b.setIcon(icon_444caeb8dd2984d497af925412f3d556);
+        
+    
+        var popup_af422c802f475073a35bac999917c16f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8391848a0df4b96b62c08d6e7b5b3164 = $(`<div id="html_8391848a0df4b96b62c08d6e7b5b3164" style="width: 100.0%; height: 100.0%;">Desa/Kelurahan: GEGERKALONG<br>Cluster: 1<br>Kategori: CURANMOR<br>Jumlah: 2</div>`)[0];
+                popup_af422c802f475073a35bac999917c16f.setContent(html_8391848a0df4b96b62c08d6e7b5b3164);
+            
+        
+
+        marker_b82c02f9f3cda54a91a952d354b6871b.bindPopup(popup_af422c802f475073a35bac999917c16f)
+        ;
+
+        
+    
+    
+            var marker_6bd431ed7944b7a4c777cc33c3d3e9e8 = L.marker(
+                [-6.867158, 107.589088],
+                {}
+            ).addTo(marker_cluster_2dd8c15273cce580cda5cd0115a3c2cd);
+        
+    
+            var icon_06babc68287f939fe500aef1f3f8d0b7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6bd431ed7944b7a4c777cc33c3d3e9e8.setIcon(icon_06babc68287f939fe500aef1f3f8d0b7);
+        
+    
+        var popup_a431f5c9b66ca162f7966e68cdd31c1f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0a6778ca4ab57d79dd57a4e87a454839 = $(`<div id="html_0a6778ca4ab57d79dd57a4e87a454839" style="width: 100.0%; height: 100.0%;">Desa/Kelurahan: GEGERKALONG<br>Cluster: 3<br>Kategori: PENCURIAN MOTOR<br>Jumlah: 1</div>`)[0];
+                popup_a431f5c9b66ca162f7966e68cdd31c1f.setContent(html_0a6778ca4ab57d79dd57a4e87a454839);
+            
+        
+
+        marker_6bd431ed7944b7a4c777cc33c3d3e9e8.bindPopup(popup_a431f5c9b66ca162f7966e68cdd31c1f)
+        ;
+
+        
+    
+    
+            var marker_af20c9b6bcb05486f60cbe2f9bed7d1e = L.marker(
+                [-6.855461, 107.59243],
+                {}
+            ).addTo(marker_cluster_2dd8c15273cce580cda5cd0115a3c2cd);
+        
+    
+            var icon_978ce3e1aed5fdff9a3f669159e82b02 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_af20c9b6bcb05486f60cbe2f9bed7d1e.setIcon(icon_978ce3e1aed5fdff9a3f669159e82b02);
+        
+    
+        var popup_fe6af02726a8868dd53443248c03d38a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_94c469569d1880923c51f19d69014331 = $(`<div id="html_94c469569d1880923c51f19d69014331" style="width: 100.0%; height: 100.0%;">Desa/Kelurahan: ISOLA<br>Cluster: 2<br>Kategori: PENCURIAN<br>Jumlah: 2</div>`)[0];
+                popup_fe6af02726a8868dd53443248c03d38a.setContent(html_94c469569d1880923c51f19d69014331);
+            
+        
+
+        marker_af20c9b6bcb05486f60cbe2f9bed7d1e.bindPopup(popup_fe6af02726a8868dd53443248c03d38a)
+        ;
+
+        
+    
+    
+            var marker_5e211c1af2c334b68656002e064897f1 = L.marker(
+                [-6.855461, 107.59243],
+                {}
+            ).addTo(marker_cluster_2dd8c15273cce580cda5cd0115a3c2cd);
+        
+    
+            var icon_aeffa80fc2ae6abba47ffe286cdd008f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5e211c1af2c334b68656002e064897f1.setIcon(icon_aeffa80fc2ae6abba47ffe286cdd008f);
+        
+    
+        var popup_f2a4503f04f2832ce29e557b4e77e4e9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dd949ff4ecbf0e4bbceaa226899e5a4d = $(`<div id="html_dd949ff4ecbf0e4bbceaa226899e5a4d" style="width: 100.0%; height: 100.0%;">Desa/Kelurahan: ISOLA<br>Cluster: 3<br>Kategori: PENCURIAN MOTOR<br>Jumlah: 2</div>`)[0];
+                popup_f2a4503f04f2832ce29e557b4e77e4e9.setContent(html_dd949ff4ecbf0e4bbceaa226899e5a4d);
+            
+        
+
+        marker_5e211c1af2c334b68656002e064897f1.bindPopup(popup_f2a4503f04f2832ce29e557b4e77e4e9)
+        ;
+
+        
+    
+    
+            var marker_63a4353fc88f81e97cb79ec1c9b00eff = L.marker(
+                [-6.874048, 107.599912],
+                {}
+            ).addTo(marker_cluster_2dd8c15273cce580cda5cd0115a3c2cd);
+        
+    
+            var icon_8067283e20dbad49c21a6bb51b57f000 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_63a4353fc88f81e97cb79ec1c9b00eff.setIcon(icon_8067283e20dbad49c21a6bb51b57f000);
+        
+    
+        var popup_b2effe090d7e809cb6169dc9c7f9f082 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_06498e8c4653afa034197df4d03adb20 = $(`<div id="html_06498e8c4653afa034197df4d03adb20" style="width: 100.0%; height: 100.0%;">Desa/Kelurahan: HEGARMANAH<br>Cluster: 1<br>Kategori: CURANMOR<br>Jumlah: 4</div>`)[0];
+                popup_b2effe090d7e809cb6169dc9c7f9f082.setContent(html_06498e8c4653afa034197df4d03adb20);
+            
+        
+
+        marker_63a4353fc88f81e97cb79ec1c9b00eff.bindPopup(popup_b2effe090d7e809cb6169dc9c7f9f082)
+        ;
+
+        
+    
+    
+            var marker_9145d3ab909c53ccff427f50ecd598bd = L.marker(
+                [-6.859909, 107.613239],
+                {}
+            ).addTo(marker_cluster_2dd8c15273cce580cda5cd0115a3c2cd);
+        
+    
+            var icon_fadcfe7565cb36f58bdb08273bd9bebf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9145d3ab909c53ccff427f50ecd598bd.setIcon(icon_fadcfe7565cb36f58bdb08273bd9bebf);
+        
+    
+        var popup_78c4e80909dfe9a7b65b9ba28f8b0871 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_21cb742f7ed61a8e99691d969b82e0d7 = $(`<div id="html_21cb742f7ed61a8e99691d969b82e0d7" style="width: 100.0%; height: 100.0%;">Desa/Kelurahan: CIUMBULEUIT<br>Cluster: 1<br>Kategori: CURANMOR<br>Jumlah: 10</div>`)[0];
+                popup_78c4e80909dfe9a7b65b9ba28f8b0871.setContent(html_21cb742f7ed61a8e99691d969b82e0d7);
+            
+        
+
+        marker_9145d3ab909c53ccff427f50ecd598bd.bindPopup(popup_78c4e80909dfe9a7b65b9ba28f8b0871)
+        ;
+
+        
+    
+    
+            var marker_606375346ba9bffbdbd48ffac3d81667 = L.marker(
+                [-6.859909, 107.613239],
+                {}
+            ).addTo(marker_cluster_2dd8c15273cce580cda5cd0115a3c2cd);
+        
+    
+            var icon_c7e3d2589f594acd1db6623f6cfc0779 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_606375346ba9bffbdbd48ffac3d81667.setIcon(icon_c7e3d2589f594acd1db6623f6cfc0779);
+        
+    
+        var popup_9a2f30f776fd820f1030e5cf21cdb545 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_78fe70583fc1df84a6a068517d2ae251 = $(`<div id="html_78fe70583fc1df84a6a068517d2ae251" style="width: 100.0%; height: 100.0%;">Desa/Kelurahan: LEDENG<br>Cluster: 1<br>Kategori: CURANMOR<br>Jumlah: 3</div>`)[0];
+                popup_9a2f30f776fd820f1030e5cf21cdb545.setContent(html_78fe70583fc1df84a6a068517d2ae251);
+            
+        
+
+        marker_606375346ba9bffbdbd48ffac3d81667.bindPopup(popup_9a2f30f776fd820f1030e5cf21cdb545)
+        ;
+
+        
+    
+    
+            var marker_a4373c36b50269391ecf93decc9a99c1 = L.marker(
+                [-6.85534, 107.598321],
+                {}
+            ).addTo(marker_cluster_2dd8c15273cce580cda5cd0115a3c2cd);
+        
+    
+            var icon_7ec00f7a1f075dbef1c8256f6212db7c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a4373c36b50269391ecf93decc9a99c1.setIcon(icon_7ec00f7a1f075dbef1c8256f6212db7c);
+        
+    
+        var popup_a699f587f629baa1f2a5a8bef02d069b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9adf3da28c6fa60fcc826a2c8ba1805b = $(`<div id="html_9adf3da28c6fa60fcc826a2c8ba1805b" style="width: 100.0%; height: 100.0%;">Desa/Kelurahan: LEDENG<br>Cluster: 1<br>Kategori: CURANMOR<br>Jumlah: 1</div>`)[0];
+                popup_a699f587f629baa1f2a5a8bef02d069b.setContent(html_9adf3da28c6fa60fcc826a2c8ba1805b);
+            
+        
+
+        marker_a4373c36b50269391ecf93decc9a99c1.bindPopup(popup_a699f587f629baa1f2a5a8bef02d069b)
+        ;
+
+        
+    
+    
+            marker_cluster_2dd8c15273cce580cda5cd0115a3c2cd.addTo(map_a8a599be05610c20b2a0420a1418a37c);
+        
+</script>
+</html>

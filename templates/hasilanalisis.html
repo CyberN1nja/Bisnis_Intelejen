@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+      Bisnis Intelejen Prediksi Kejahatan/title> <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous" /> <title>Bisnis Intelejen Klastering Kejahatan Kota Bandung
+    </title>
+    <!-- Link ke CSS -->
+    <link rel="stylesheet" href="/static/style/style.css" />
+  </head>
+
+  <body>
+    <div class="navbar">
+      <h1>Menu</h1>
+      <a href="/visualisasi">Visualisasi Data</a>
+      <a href="/analisis">Analysis Data</a>
+      <a href="#" id="contactBtn">Contact</a>
+
+      <div id="hiddenText">
+        Created by : Muhammad Rangga Ridjali <br />
+        contact info : @mhmrang925_
+      </div>
+    </div>
+
+    <main class="main-content">
+      <!-- Konten utama halaman -->
+      <h1>Peta klaster kejahatan di tiap kecamatan kota <br />Bandung 2018-2020</h1>
+      <div>
+        <iframe class="iframe" src="/static/maps/peta_clustering.html" width="50%" height="500px"></iframe>
+      </div>
+      <div>
+        <h1>Prediksi Kejahatan 1 tahun kedepan di beberapa kecamatan desa kota Bandung</h1>
+        <form id="crime-data-form">
+          <label for="kategori_pelanggaran">Kategori Pelanggaran:</label>
+          <select id="kategori_pelanggaran" name="kategori_pelanggaran" required>
+            <option value="">Pilih Kategori</option>
+            <option value="PERKELAHIAN">PERKELAHIAN</option>
+            <option value="PENCURIAN">PENCURIAN</option>
+            <option value="PERKELAHIAN KELUARGA">PERKELAHIAN KELUARGA</option>
+            <option value="PENCURIAN KENDARAAN BERMOTOR">PENCURIAN KENDARAAN BERMOTOR</option>
+            <option value="PERAMPASAN">PERAMPASAN</option>
+            <option value="PENCURIAN HP">PENCURIAN HP</option>
+            <option value="CURANMOR">CURANMOR</option>
+            <option value="BALAP LIAR">BALAP LIAR</option>
+            <option value="BEGAL">BEGAL</option>
+            <option value="KERIBUTAN WARGA">KERIBUTAN WARGA</option>
+            <!-- Tambahkan kategori lainnya sesuai kebutuhan -->
+          </select>
+
+          <label for="bps_nama_kecamatan">Nama Kecamatan:</label>
+          <select id="bps_nama_kecamatan" name="bps_nama_kecamatan" required>
+            <option value="">Pilih Kecamatan</option>
+            <option value="ANTAPANI">ANTAPANI</option>
+            <option value="UJUNG BERUNG">UJUNG BERUNG</option>
+            <option value="GEDEBAGE">GEDEBAGE</option>
+            <option value="CIDADAP">CIDADAP</option>
+            <option value="ARCAMANIK">ARCAMANIK</option>
+            <option value="BOJONGLOA KIDUL">BOJONGLOA KIDUL</option>
+            <option value="BATUNUNGGAL">BATUNUNGGAL</option>
+            <option value="SUKASARI">SUKASARI</option>
+            <!-- Tambahkan kecamatan lainnya sesuai kebutuhan -->
+          </select>
+
+          <label for="bps_desa_kelurahan">Nama Desa/Kelurahan:</label>
+          <select id="bps_desa_kelurahan" name="bps_desa_kelurahan" required>
+            <option value="">Pilih Desa/Kelurahan</option>
+            <option value="ANTAPANI KIDUL">ANTAPANI KIDUL</option>
+            <option value="ANTAPANI KULON">ANTAPANI KULON</option>
+            <option value="PASIR ENDAH">PASIR ENDAH</option>
+            <option value="CIGENDING">CIGENDING</option>
+            <option value="PASIR WANGI">PASIR WANGI</option>
+            <option value="PASIRJATI">PASIRJATI</option>
+            <option value="RANCABOLANG">RANCABOLANG</option>
+            <option value="RANCANUMPANG">RANCANUMPANG</option>
+            <option value="CIMINCRANG">CIMINCRANG</option>
+            <option value="HEGARMANAH">HEGARMANAH</option>
+            <option value="CIUMBULEUIT">CIUMBULEUIT</option>
+            <option value="LEDENG">LEDENG</option>
+            <option value="CISARANTEN BINA HARAPAN">CISARANTEN BINA HARAPAN</option>
+            <option value="CISARANTEN KULON">CISARANTEN KULON</option>
+            <option value="SUKAMISKIN">SUKAMISKIN</option>
+            <option value="CISARANTEN ENDAH">CISARANTEN ENDAH</option>
+            <option value="SITUSAEUR">SITUSAEUR</option>
+            <option value="CIBADUYUT KIDUL">CIBADUYUT KIDUL</option>
+            <option value="BINONG">BINONG</option>
+            <option value="GEGERKALONG">GEGERKALONG</option>
+            <option value="SUKARASA">SUKARASA</option>
+            <option value="ISOLA">ISOLA</option>
+            <option value="SARIJADI">SARIJADI</option>
+            <!-- Tambahkan desa/kelurahan lainnya sesuai kebutuhan -->
+          </select>
+
+          <button type="submit">Kirim Data</button>
+        </form>
+      </div>
+      <div>
+        <!-- menampilkan hasil forcasting  -->
+        <h1>hasil Prediksi 1 tahun kedepan</h1>
+        <canvas id="bar-chart" width="400" height="200"></canvas>
+        <!-- Canvas untuk grafik garis -->
+        <canvas id="line-chart" width="400" height="200"></canvas>
+      </div>
+
+      <!-- Tambahkan tabel untuk menampilkan data peramalan -->
+      <div id="forecast-table-container">
+        <table id="forecast-table">
+          <thead>
+            <tr>
+              <th>Bulan</th>
+              <th>Jumlah Kasus Aktual (2021)</th>
+              <th>Prediksi Kasus (2021)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Data tabel akan diisi oleh JavaScript -->
+          </tbody>
+        </table>
+      </div>
+    </main>
+
+    <aside>
+      <!-- Konten samping seperti sidebar atau widget tambahan -->
+    </aside>
+
+    <footer>
+      <!-- Informasi footer seperti hak cipta atau link tambahan -->
+    </footer>
+
+    <!-- Script JS -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="/static/javascript/script.js"></script>
+  </body>
+</html>

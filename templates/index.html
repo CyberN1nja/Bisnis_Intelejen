@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visualisasi Data Kejahatan</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="/static/style/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="navbar">
+      <h1>Menu</h1>
+      <a href="/visualisasi">Visualisasi Data</a>
+      <a href="/analisis">Analysis Data</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <h1>Visualisasi Data Kejahatan Kota Bandung 2018 - 2020</h1>
+
+      <!-- Container for Horizontal Charts -->
+      <div class="chart-container">
+        <!-- Grafik Batang: Jumlah Kejahatan per Jenis di Setiap Kecamatan -->
+        <div class="chart-item">
+          <h2>Jumlah Kejahatan per Jenis di Setiap Kecamatan Tahun 2018 - 2020</h2>
+          <canvas id="barChart"></canvas>
+        </div>
+
+        <!-- Grafik Garis: Tren Jumlah Kejahatan dari 2018 - 2020 -->
+        <div class="chart-item">
+          <h2>Tren Jumlah Kejahatan dari Tahun 2018 - 2020</h2>
+          <canvas id="lineChart"></canvas>
+        </div>
+      </div>
+
+      <!-- Grafik Pie: Proporsi Jenis Kejahatan -->
+      <div class="pie-chart-container">
+        <h2>Proporsi Jenis Kejahatan 2018 - 2020</h2>
+        <canvas id="pieChart"></canvas>
+      </div>
+    </div>
+
+    <script>
+      // Data from Flask
+      const kategoriKejahatan = JSON.parse('{{ kategori_pelanggaran | tojson }}');
+      const tahun = JSON.parse('{{ tahun | tojson }}');
+      const desaKelurahan = JSON.parse('{{ desa_kelurahan | tojson }}');
+      const kecamatan = JSON.parse('{{ kecamatan | tojson }}');
+
+      // Chart for Crime Categories by District
+      new Chart(document.getElementById('barChart'), {
+        type: 'bar',
+        data: {
+          labels: Object.keys(kecamatan),
+          datasets: [
+            {
+              label: 'Jumlah Kejahatan per Jenis',
+              data: Object.values(kecamatan),
+              backgroundColor: 'rgba(75, 192, 192, 0.2)',
+              borderColor: 'rgba(75, 192, 192, 1)',
+              borderWidth: 1,
+            },
+          ],
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true,
+            },
+          },
+        },
+      });
+
+      // Line Chart for Crime Trend Over Years
+      new Chart(document.getElementById('lineChart'), {
+        type: 'line',
+        data: {
+          labels: Object.keys(tahun),
+          datasets: [
+            {
+              label: 'Jumlah Kejahatan per Tahun',
+              data: Object.values(tahun),
+              fill: false,
+              borderColor: 'rgba(75, 192, 192, 1)',
+              tension: 0.1,
+            },
+          ],
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true,
+            },
+          },
+        },
+      });
+
+      // Pie Chart for Crime Proportions
+      new Chart(document.getElementById('pieChart'), {
+        type: 'pie',
+        data: {
+          labels: Object.keys(kategoriKejahatan),
+          datasets: [
+            {
+              label: 'Proporsi Jenis Kejahatan',
+              data: Object.values(kategoriKejahatan),
+              backgroundColor: ['rgba(255, 99, 132, 0.2)', 'rgba(54, 162, 235, 0.2)', 'rgba(255, 206, 86, 0.2)', 'rgba(75, 192, 192, 0.2)', 'rgba(153, 102, 255, 0.2)', 'rgba(255, 159, 64, 0.2)'],
+              borderColor: ['rgba(255, 99, 132, 1)', 'rgba(54, 162, 235, 1)', 'rgba(255, 206, 86, 1)', 'rgba(75, 192, 192, 1)', 'rgba(153, 102, 255, 1)', 'rgba(255, 159, 64, 1)'],
+              borderWidth: 1,
+            },
+          ],
+        },
+      });
+    </script>
+  </body>
+</html>
